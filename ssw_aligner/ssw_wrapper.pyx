@@ -644,6 +644,7 @@ cdef class StripedSmithWaterman:
                                            reference_sequence,
                                            self.index_starts_at)
         alignment.__constructor(align)  # Hack to get a pointer through
+        init_destroy(self.profile)
         return alignment
 
     def _get_bit_flag(self, override_skip_babp, score_only):

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 import numpy as np
@@ -16,7 +16,7 @@ extensions = cythonize([
 
 
 setup(name='ssw_aligner',
-      version='0.0.8',
+      version='0.0.9',
       license='MIT',
       description='Python implementation of Striped Smith-Waterman Algorithm',
       long_description='Python implementation of Striped Smith-Waterman Algorithm(one of the local alignment algorithms). Please visit the github page for more details.',
